@@ -1,12 +1,4 @@
-# Trabalho Prático - Semana 11 
-
-**Páginas de detalhes dinâmicas**
-
-Nessa etapa, vamos evoluir o trabalho anterior, acrescentando a página de detalhes, conforme o projeto escolhido. Imagine que a página principal (home-page) mostre uma visão dos vários itens que existem no seu site. Ao clicar em um item, você é direcionado para a página de detalhes. A página de detalhe vai mostrar todas as informações sobre o item do seu projeto – seja esse item uma notícia, filme, receita, lugar turístico ou evento.
-
----
-
-## Informações Gerais
+# Trabalho Prático - Semana 12
 
 - **Nome:** Pedro Augusto Niess Ferreira  
 - **Matrícula:** 1540911  
@@ -16,53 +8,59 @@ Nessa etapa, vamos evoluir o trabalho anterior, acrescentando a página de detal
 
 ---
 
-## Etapa 1 – Responsividade com CSS puro
+### ✅ Etapa de testes da API
 
-### ✅ Print da versão responsiva com CSS
+Foram realizados testes completos na API utilizando o [Postman/Thunder Client/Insomnia] para validar as operações de **CRUD (Create, Read, Update, Delete)** da entidade `receitas` do projeto.
 
-![Print da versão responsiva](./public/CapturadeTela.png)
+Cada requisição foi testada e validada, conforme descrito abaixo:
 
 ---
 
-## Etapa 2 – Montagem da Estrutura de Dados e Teste da API com JSON Server
+#### 🔍 **GET - Buscar todas as receitas**
 
-A API da aplicação foi criada com o uso do **JSON Server**, utilizando um arquivo `db.json` com uma estrutura de dados representando receitas.
+- Retorna todas as receitas cadastradas na API em formato JSON.
+- Endpoint utilizado: `GET http://localhost:3000/receitas`
 
-![Print da área NETWORK](./public/insp.png)
+![GET - Buscar Receitas](./public/get.png)
 
-### ✅ Estrutura inserida no `db.json`:
+---
 
-![Print do retorno da API](./public/APIreturn.png)
+#### 🔍 **GET - Buscar receita por ID**
 
-```json
-{
-  "receitas": [
-    {
-      "id": 1,
-      "nome": "Brigadeiro",
-      "tempoPreparo": "30 minutos",
-      "descricao": "Doce tradicional brasileiro feito com chocolate.",
-      "imagem": "brigadeiro.png",
-      "ingredientes": ["leite condensado", "chocolate", "manteiga"],
-      "modoPreparo": ["Misture tudo", "Cozinhe até soltar do fundo"]
-    },
-    {
-      "id": 2,
-      "nome": "Bolo de Cenoura",
-      "tempoPreparo": "50 minutos",
-      "descricao": "Bolo clássico com cobertura de chocolate.",
-      "imagem": "bolo-cenoura.png",
-      "ingredientes": ["cenoura", "farinha", "açúcar", "ovos"],
-      "modoPreparo": ["Bata tudo", "Asse por 40 minutos"]
-    },
-    {
-      "id": 3,
-      "nome": "Pudim",
-      "tempoPreparo": "1 hora",
-      "descricao": "Sobremesa tradicional com calda caramelizada.",
-      "imagem": "pudim.png",
-      "ingredientes": ["leite", "ovos", "açúcar", "leite condensado"],
-      "modoPreparo": ["Bata no liquidificador", "Asse em banho-maria"]
-    }
-  ]
-}
+- Retorna os detalhes de uma receita específica utilizando seu ID.
+- Exemplo de endpoint: `GET http://localhost:3000/receitas/1`
+
+*(Opcional: inserir print se desejar)*
+
+---
+
+#### ➕ **POST - Cadastrar uma nova receita**
+
+- Permite adicionar uma nova receita na base de dados.
+- Endpoint utilizado: `POST http://localhost:3000/receitas`
+- Body enviado no formato JSON, contendo informações como nome, descrição, ingredientes, modo de preparo e imagem.
+
+![POST - Cadastro de Receita](./public/post.png)
+
+---
+
+#### ✏️ **PUT - Atualizar uma receita existente**
+
+- Realiza a atualização completa de uma receita existente através de seu ID.
+- Endpoint utilizado: `PUT http://localhost:3000/receitas/1`
+- Body com os dados atualizados no formato JSON.
+
+![PUT - Atualização de Receita](./public/put.png)
+
+---
+
+#### 🗑️ **DELETE - Remover uma receita**
+
+- Remove uma receita existente da base de dados usando seu ID.
+- Endpoint utilizado: `DELETE http://localhost:3000/receitas/1`
+
+![DELETE - Remoção de Receita](./public/delete.png)
+
+---
+
+Todos os testes foram realizados com sucesso, garantindo o funcionamento correto da API RESTful construída com JSON Server.
