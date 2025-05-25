@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Receita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Editar Receita</h1>
+
+        <form id="form-editar" class="formulario">
+            <input type="text" id="nome" placeholder="Nome da Receita" required><br>
+            <input type="text" id="descricao" placeholder="Descrição" required><br>
+            <input type="text" id="tempoPreparo" placeholder="Duração (ex.: 50 minutos)" required><br>
+            <input type="text" id="ingredientes" placeholder="Ingredientes (separados por vírgula)" required><br>
+            <textarea id="modoPreparo" placeholder="Modo de Preparo (passos separados por ponto e vírgula)" required></textarea><br>
+            <input type="text" id="imagem" placeholder="Nome da imagem (ex.: bolo.png)" required><br>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Lista de Receitas</h1>
+
+    <div style="display: flex; width:100%; justify-content: space-between;">
+        <h2>Receitas</h2>
+  <a href="cadastro.html">
+    <button id="btnAdd">Adicionar Receita</button>
+</a>
+
+    </div>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Tempo de Preparo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-receitas">
+            <!-- As linhas serão inseridas dinamicamente -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

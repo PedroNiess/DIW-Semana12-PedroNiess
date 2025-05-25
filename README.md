@@ -63,4 +63,10 @@ Cada requisição foi testada e validada, conforme descrito abaixo:
 
 ---
 
+#### 🗑️ **Cadastro de receitas pelo front end**
+
+
+![FETCH - Comprovação do fetch feito pelo front-end](./public/fetch.png)
+
+---
 Todos os testes foram realizados com sucesso, garantindo o funcionamento correto da API RESTful construída com JSON Server.
