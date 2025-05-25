@@ -170,3 +170,73 @@ body, h1, h2, h3, p, ul, li {
     background-color: #3949ab;
   }
   
+  /* FORMULÁRIO DE CADASTRO */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form#form-receita {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form#form-receita input,
+form#form-receita textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+form#form-receita input:focus,
+form#form-receita textarea:focus {
+    border-color: #3949ab;
+    outline: none;
+}
+
+form#form-receita textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form#form-receita button {
+    padding: 12px;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form#form-receita button:hover {
+    background-color: #3949ab;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form#form-receita {
+        padding: 20px;
+    }
+}
