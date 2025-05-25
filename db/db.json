@@ -1,0 +1,62 @@
+{
+    "receitas": [
+      {
+        "id": 1,
+        "nome": "Brigadeiro",
+        "tempoPreparo": "30 minutos",
+        "descricao": "Doce tradicional brasileiro feito com chocolate.",
+        "imagem": "brigadeiro.png",
+        "ingredientes": [
+          "1 caixa de leite condensado",
+          "1 colher de margarina sem sal",
+          "7 colheres de achocolatado"
+        ],
+        "modoPreparo": [
+          "Misture tudo em uma panela.",
+          "Mexa até desgrudar do fundo.",
+          "Deixe esfriar e enrole em bolinhas.",
+          "Passe no granulado."
+        ]
+      },
+      {
+        "id": 2,
+        "nome": "Bolo de Cenoura",
+        "tempoPreparo": "50 minutos",
+        "descricao": "Bolo clássico com cobertura de chocolate.",
+        "imagem": "boloCenoura.webp",
+        "ingredientes": [
+          "cenoura",
+          "farinha",
+          "açúcar",
+          "ovos"
+        ],
+        "modoPreparo": [
+          "Bata a cenoura com ovos e óleo.",
+          "Adicione os ingredientes secos.",
+          "Despeje na forma e asse por 40 minutos.",
+          "Cubra com calda de chocolate."
+        ]
+      },
+      {
+        "id": 3,
+        "nome": "Pudim",
+        "tempoPreparo": "1 hora",
+        "descricao": "Sobremesa tradicional com calda caramelizada.",
+        "imagem": "image.png",
+        "ingredientes": [
+          "leite",
+          "ovos",
+          "açúcar",
+          "leite condensado"
+        ],
+        "modoPreparo": [
+          "Prepare a calda caramelizando o açúcar.",
+          "Bata os ingredientes no liquidificador.",
+          "Despeje na forma caramelizada.",
+          "Asse em banho-maria por 1 hora.",
+          "Deixe esfriar e desenforme."
+        ]
+      }
+    ]
+  }
+  
